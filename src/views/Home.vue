@@ -68,3 +68,11 @@ import List from './List.vue' //直接使用import关键字，通过相对路径
 </template>
 //List组件会被渲染三次，但是这三个组件并不共享数据。他们的输入框变量content和列表变量list都是独立的
 -->
+
+<script setup>
+import TodoList from './TodoList.vue'
+</script>
+
+<template>
+<TodoList v-for="i in 3"></TodoList>
+</template>
